@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Kuranie</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-bg">
+    <div class="site-wrap">
+      <header class="banner window">
+        <img class="banner-art" src="https://via.placeholder.com/760x120.png?text=PORTFOLIO" alt="banner art">
+      </header>
+
+      <nav class="top-nav window">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="guestbook.html" class="nav-link">Guestbook</a>
+      </nav>
+
+      <main class="single-col window content-page">
+        <h2>portfolio</h2>
+        <div class="grid-portfolio">
+          <!-- replace placeholders with actual project images -->
+          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Project+1" alt="Project 1"><h4>Project 1</h4></a>
+          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Project+2" alt="Project 2"><h4>Project 2</h4></a>
+          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Animation" alt="Animation"><h4>Animation</h4></a>
+          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Pixel+Art" alt="Pixel Art"><h4>Pixel art</h4></a>
+        </div>
+      </main>
+
+      <footer class="site-foot window">
+        <p>© 2025 — enjoy the small gallery ✦</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
