@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Guestbook — Kuranie</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="page-bg">
+    <div class="site-wrap">
+      <header class="banner window">
+        <img class="banner-art" src="https://via.placeholder.com/760x120.png?text=GUESTBOOK" alt="banner art">
+      </header>
+
+      <nav class="top-nav window">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="guestbook.html" class="nav-link">Guestbook</a>
+      </nav>
+
+      <main class="single-col window content-page">
+        <h2>guestbook</h2>
+
+        <form id="gb-form" class="guest-form">
+          <label>
+            Name:
+            <input id="gb-name" required placeholder="your name or nickname">
+          </label>
+          <label>
+            Message:
+            <textarea id="gb-msg" required placeholder="leave a nice note!"></textarea>
+          </label>
+          <div class="form-row">
+            <button type="submit" class="btn">Sign guestbook</button>
+            <button type="button" id="clear-gb" class="btn alt">Clear</button>
+          </div>
+        </form>
+
+        <section class="guest-entries" id="gb-entries">
+          <!-- entries injected by script.js -->
+        </section>
+      </main>
+
+      <footer class="site-foot window">
+        <p>Thanks for visiting — sign the guestbook if you like!</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
