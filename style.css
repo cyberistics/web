@@ -1,0 +1,148 @@
+/* ✦ Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, #eaf4ff 0%, #d7e3ff 100%);
+  font-family: "Verdana", "Trebuchet MS", sans-serif;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* ✦ Window container */
+.window {
+  background: #f8fbff;
+  border: 2px solid #b9d2f5;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(130, 150, 200, 0.3);
+  width: 900px;
+  overflow: hidden;
+}
+
+/* ✦ Top bar */
+.topbar {
+  background: linear-gradient(90deg, #c9dcff, #e1ebff);
+  padding: 10px 20px;
+  border-bottom: 1px solid #b2c6e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar h1 {
+  font-size: 1.2rem;
+  color: #2c3e75;
+  letter-spacing: 0.5px;
+}
+
+.topbar nav a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: #4a64a6;
+  font-weight: bold;
+}
+
+.topbar nav a:hover {
+  color: #769cff;
+  text-decoration: underline;
+}
+
+/* ✦ Layout */
+.content {
+  display: flex;
+  padding: 15px;
+}
+
+/* ✦ Sidebar */
+.sidebar {
+  width: 30%;
+  border-right: 1px solid #c3d8f2;
+  padding-right: 15px;
+}
+
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid #a8c8f0;
+  margin-bottom: 8px;
+}
+
+.profile h2 {
+  font-size: 1.1rem;
+  color: #395fa8;
+}
+
+.status, .links {
+  margin-top: 15px;
+  background: #eaf2ff;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.links ul {
+  list-style: none;
+}
+
+.links li {
+  margin: 5px 0;
+}
+
+.links a {
+  color: #456ab0;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* ✦ Main Content */
+main {
+  flex: 1;
+  padding: 0 20px;
+}
+
+main h2 {
+  border-bottom: 1px solid #c6d9f8;
+  padding-bottom: 4px;
+  color: #2f4f9f;
+  margin-bottom: 10px;
+}
+
+.about p {
+  line-height: 1.6;
+}
+
+.gallery {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 150px;
+  border-radius: 6px;
+  border: 1px solid #b3cfff;
+  transition: transform 0.2s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  border-color: #87adff;
+}
+
+/* ✦ Footer */
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #5c6b90;
+}
