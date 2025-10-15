@@ -163,3 +163,60 @@ footer {
   font-size: 0.9rem;
   color: #3f569d;
 }
+
+.y2k-animated-button {
+  --y2k-pink: #aabbcc;
+  --y2k-purple: #678bb1;
+  --y2k-shine: #ffffff;
+  
+  position: relative;
+  overflow: hidden; /* This is essential to hide the pseudo-element */
+  padding: 12px 30px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--y2k-purple);
+  border-radius: 5px;
+  background: linear-gradient(
+    180deg,
+    var(--y2k-pink) 0%,
+    var(--y2k-purple) 100%
+  );
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.3s ease;
+}
+
+.y2k-animated-button span {
+  position: relative;
+  z-index: 1;
+}
+
+.y2k-animated-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.y2k-animated-button:hover::before {
+  animation: shine-effect 0.8s;
+}
+
+@keyframes shine-effect {
+  0% { left: -75%; }
+  100% { left: 125%; }
+}
