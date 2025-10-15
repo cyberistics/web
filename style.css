@@ -164,7 +164,17 @@ footer {
   color: #3f569d;
 }
 
-.y2k-animated-button {
+/* Container for the menu to remove default list styles */
+.button-animated-menu ul {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arranges links horizontally */
+  gap: 10px; /* Adds space between the buttons */
+}
+
+/* Style the links themselves to act as buttons */
+.button-animated-menu a {
   --y2k-pink: #aabbcc;
   --y2k-purple: #678bb1;
   --y2k-shine: #ffffff;
@@ -189,14 +199,17 @@ footer {
     0 4px 8px rgba(0, 0, 0, 0.3),
     inset 0 1px 1px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease;
+  
+  display: inline-block; /* Allows padding and transforms */
+  text-decoration: none; /* Removes the underline */
 }
 
-.y2k-animated-button span {
+.button-animated-menu a span {
   position: relative;
-  z-index: 1;
+  z-index: 1; /* Puts the text on top of the shine */
 }
 
-.y2k-animated-button::before {
+.button-animated-menu a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -212,11 +225,19 @@ footer {
   transform: skewX(-20deg);
 }
 
-.y2k-animated-button:hover::before {
+.button-animated-menu a:hover::before {
   animation: shine-effect 0.8s;
 }
 
 @keyframes shine-effect {
   0% { left: -75%; }
   100% { left: 125%; }
+}
+
+/* Optional: add an active state for a "press" effect */
+.button-animated-menu a:active {
+  box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transform: translateY(2px);
 }
