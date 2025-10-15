@@ -1,141 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kuranie’s Park — home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome ✦ my park</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="page-bg">
-    <div class="site-wrap">
+  <div class="page-wrapper">
+    <header class="header">
+      <img src="images/header.png" alt="Header banner">
+      <h1>★ Welcome to My Site ★</h1>
+    </header>
 
-      <!-- header/banner -->
-      <header class="banner window">
-        <div class="banner-left">
-          <img class="banner-art" src="https://via.placeholder.com/760x120.png?text=KURANIE%27S+PARK" alt="banner art">
+    <div class="main-container">
+      <aside class="sidebar">
+        <h2>Park Map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#">Guestbook</a></li>
+        </ul>
+
+        <div class="profile">
+          <img src="images/pfp.png" alt="Profile picture">
+          <p><b>Username</b></p>
+          <p>any pronouns • artist • coder</p>
         </div>
-        <div class="banner-right">
-          <img class="mini-pfp" src="https://via.placeholder.com/120.png?text=PFP" alt="pfp">
-          <div class="visitor">Visitors: <span id="visitor-count">0</span></div>
-        </div>
-      </header>
+      </aside>
 
-      <!-- nav -->
-      <nav class="top-nav window">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="guestbook.html" class="nav-link">Guestbook</a>
-        <div class="now-playing">♫ <span id="now-playing">Secret Love</span></div>
-      </nav>
+      <main>
+        <section class="welcome-box">
+          <h2>Entering the park...</h2>
+          <p>Hello! Welcome to my little space on the web ♡  
+          Feel free to explore, read about me, or see my portfolio!</p>
+        </section>
 
-      <!-- main layout -->
-      <div class="content-grid">
-
-        <!-- left sidebar -->
-        <aside class="sidebar window">
-          <h3 class="widget-title">Park Map</h3>
-          <ul class="sitemap">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="guestbook.html">Guestbook</a></li>
-            <li><a href="#">Links</a></li>
+        <section class="updates">
+          <h3>Recent Updates</h3>
+          <ul>
+            <li><b>10/10/2025:</b> Added new art to the portfolio!</li>
+            <li><b>10/05/2025:</b> Finished styling the website ✿</li>
+            <li><b>09/30/2025:</b> Started building the “about me” page!</li>
           </ul>
+        </section>
 
-          <div class="widget cute-box">
-            <h4>Profile</h4>
-            <img src="https://via.placeholder.com/160x160.png?text=profile" alt="profile" class="profile-large">
-            <p class="muted">hey! i'm <strong>Kuranie</strong>. i love soft palettes, retro web, & making things ✦</p>
-          </div>
-
-          <div class="widget to-do">
-            <h4>To-do</h4>
-            <ol>
-              <li>Create music player</li>
-              <li>Fix left bar spacing</li>
-              <li>Build diary page</li>
-              <li>About / portfolio section</li>
-            </ol>
-          </div>
-        </aside>
-
-        <!-- main column -->
-        <main class="main-col window">
-          <section class="welcome-card">
-            <h2>entering the park…</h2>
-            <p class="lead">hello! welcome to my site — this is my little corner of the web where i collect art, small projects, and cute links.</p>
-          </section>
-
-          <section class="sections">
-            <div class="box gallery">
-              <h3 class="section-title">Latest Works</h3>
-              <div class="thumb-grid">
-                <img src="https://via.placeholder.com/180.png?text=proj1" alt="proj1">
-                <img src="https://via.placeholder.com/180.png?text=proj2" alt="proj2">
-                <img src="https://via.placeholder.com/180.png?text=proj3" alt="proj3">
-                <img src="https://via.placeholder.com/180.png?text=proj4" alt="proj4">
-              </div>
-            </div>
-
-            <div class="box diary">
-              <h3 class="section-title">Mini Diary</h3>
-              <article class="diary-entry">
-                <time>2024-10-01</time>
-                <p>Opened my little homepage project. Trying to make it cozy and nostalgic — with pastel checks and cute frame borders!</p>
-              </article>
-              <article class="diary-entry">
-                <time>2024-09-12</time>
-                <p>Started a tiny sketch series. Posted one on the portfolio page.</p>
-              </article>
-            </div>
-
-            <div class="box extras">
-              <h3 class="section-title">Tiny Widgets</h3>
-              <div class="widget inline">
-                <h4>Now</h4>
-                <p>listening <em>Secret Love</em></p>
-              </div>
-
-              <div class="widget inline">
-                <h4>Links</h4>
-                <p><a href="#">my twitter</a> · <a href="#">my carrd</a></p>
-              </div>
-            </div>
-          </div>
-          </section>
-
-        </main>
-
-        <!-- right column -->
-        <aside class="rightbar window">
-          <div class="widget calendar">
-            <h4>Calendar</h4>
-            <div id="mini-calendar"></div>
-          </div>
-
-          <div class="widget cute-box">
-            <h4>small bio</h4>
-            <p class="muted">i'm a maker of pixel bits, small animations, and late-night playlist curations. pronouns: they/them</p>
-          </div>
-
-          <div class="widget social">
-            <h4>follow</h4>
-            <a class="round-btn" href="#">TW</a>
-            <a class="round-btn" href="#">SP</a>
-            <a class="round-btn" href="#">DS</a>
-          </div>
-        </aside>
-
-      </div>
-
-      <footer class="site-foot window">
-        <p>© 2025 Kuranie's Park — made with 💙 — built for Neocities / indeweb vibes</p>
-      </footer>
-
+        <section class="todo">
+          <h3>To-Do List</h3>
+          <ol>
+            <li>Finish guestbook</li>
+            <li>Add more portfolio pages</li>
+            <li>Make a custom cursor!</li>
+          </ol>
+        </section>
+      </main>
     </div>
+
+    <footer>
+      <p>© 2025 yourname ✦ hosted on neocities</p>
+    </footer>
   </div>
 </body>
 </html>
