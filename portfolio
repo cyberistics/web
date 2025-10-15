@@ -1,41 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Portfolio — Kuranie</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio ✦ my park</title>
   <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="page-bg">
-    <div class="site-wrap">
-      <header class="banner window">
-        <img class="banner-art" src="https://via.placeholder.com/760x120.png?text=PORTFOLIO" alt="banner art">
-      </header>
+  <div class="page-wrapper">
+    <header class="header">
+      <img src="images/header.png" alt="Header banner">
+      <h1>★ Portfolio ★</h1>
+    </header>
 
-      <nav class="top-nav window">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="guestbook.html" class="nav-link">Guestbook</a>
-      </nav>
+    <div class="main-container">
+      <aside class="sidebar">
+        <h2>Park Map</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="#">Guestbook</a></li>
+        </ul>
+      </aside>
 
-      <main class="single-col window content-page">
-        <h2>portfolio</h2>
-        <div class="grid-portfolio">
-          <!-- replace placeholders with actual project images -->
-          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Project+1" alt="Project 1"><h4>Project 1</h4></a>
-          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Project+2" alt="Project 2"><h4>Project 2</h4></a>
-          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Animation" alt="Animation"><h4>Animation</h4></a>
-          <a class="proj" href="#"><img src="https://via.placeholder.com/320x220.png?text=Pixel+Art" alt="Pixel Art"><h4>Pixel art</h4></a>
-        </div>
+      <main>
+        <section class="portfolio-grid">
+          <div class="item">
+            <img src="images/sample1.png" alt="Project 1">
+            <p>Illustration 1</p>
+          </div>
+          <div class="item">
+            <img src="images/sample2.png" alt="Project 2">
+            <p>Character Design</p>
+          </div>
+          <div class="item">
+            <img src="images/sample3.png" alt="Project 3">
+            <p>Website Layout Mockup</p>
+          </div>
+        </section>
       </main>
-
-      <footer class="site-foot window">
-        <p>© 2025 — enjoy the small gallery ✦</p>
-      </footer>
     </div>
+
+    <footer>
+      <p>back to <a href="index.html">home</a></p>
+    </footer>
   </div>
 </body>
 </html>
