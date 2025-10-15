@@ -166,11 +166,12 @@ footer {
 
 /* Container for the menu to remove default list styles */
 .button-animated-menu ul {
-  list-style-type: none; /* Removes bullets */
+  list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Arranges links horizontally */
-  gap: 10px; /* Adds space between the buttons */
+  display: flex;
+  flex-direction: column; /* This is the key change */
+  gap: 10px; /* Adds vertical space between the buttons */
 }
 
 /* Style the links themselves to act as buttons */
