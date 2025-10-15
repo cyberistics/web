@@ -26,9 +26,9 @@ body {
 header.header {
     background: linear-gradient(
     180deg,
-  #aabbcc 10%,
-  #678bb1 70%,
-  #aabbcc 95%
+  #aabbcc 60%,
+  #678bb1 80%,
+  #aabbcc 100%
   );
   text-align: center;
   padding: 10px 0;
