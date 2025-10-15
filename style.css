@@ -6,7 +6,7 @@
 
 body {
   background: #dce7f9 url('https://files.catbox.moe/1tmi5p.png') repeat;
-  font-family: "Verdana", sans-serif;
+  font-family: "Quando", sans-serif;
   color: #2d2d50;
   display: flex;
   justify-content: center;
@@ -245,4 +245,10 @@ footer {
     0 2px 4px rgba(0, 0, 0, 0.2),
     inset 0 1px 1px rgba(255, 255, 255, 0.5);
   transform: translateY(2px);
+  
+}
+.quando-regular {
+  font-family: "Quando", serif;
+  font-weight: 400;
+  font-style: normal;
 }
