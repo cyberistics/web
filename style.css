@@ -165,24 +165,22 @@ footer {
   color: #3f569d;
 }
 
-/* Container for the menu to remove default list styles */
+/*stupid overly complicated buttons...*/
 .button-animated-menu ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-direction: column; /* This is the key change */
-  gap: 10px; /* Adds vertical space between the buttons */
+  flex-direction: column;
+  gap: 10px; 
 }
 
-/* Style the links themselves to act as buttons */
 .button-animated-menu a {
-  --y2k-pink: #aabbcc;
-  --y2k-purple: #678bb1;
-  --y2k-shine: #ffffff;
-  
+  --button-color1: #aabbcc;
+  --button-color2: #678bb1;
+  --button-shine: #ffffff;
   position: relative;
-  overflow: hidden; /* This is essential to hide the pseudo-element */
+  overflow: hidden;
   padding: 12px 30px;
   font-family: Arial, sans-serif;
   font-size: 16px;
@@ -190,25 +188,25 @@ footer {
   text-transform: uppercase;
   color: #fff;
   cursor: pointer;
-  border: 1px solid var(--y2k-purple);
+  border: 2px solid var(--button-color2);
   border-radius: 5px;
   background: linear-gradient(
     180deg,
-    var(--y2k-pink) 0%,
-    var(--y2k-purple) 100%
+    var(--button-color1) 0%,
+    var(--button-color2) 100%
   );
   box-shadow:
     0 4px 8px rgba(0, 0, 0, 0.3),
     inset 0 1px 1px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease;
   
-  display: inline-block; /* Allows padding and transforms */
-  text-decoration: none; /* Removes the underline */
+  display: inline-block;
+  text-decoration: none; 
 }
 
 .button-animated-menu a span {
   position: relative;
-  z-index: 1; /* Puts the text on top of the shine */
+  z-index: 1;
 }
 
 .button-animated-menu a::before {
@@ -236,7 +234,6 @@ footer {
   100% { left: 125%; }
 }
 
-/* Optional: add an active state for a "press" effect */
 .button-animated-menu a:active {
   box-shadow: 
     0 2px 4px rgba(0, 0, 0, 0.2),
