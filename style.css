@@ -163,11 +163,15 @@ section h2, section h3 {
 
 footer {
   text-align: center;
-  background: #e1ebff;
-  border-top: 1px solid #b3c7f0;
+    background: linear-gradient(
+    180deg,
+  #aabbcc 0%,
+  #678bb1 50%,
+  #aabbcc 100%
+  );  border-top: 1px solid #b3c7f0;
   padding: 10px;
   font-size: 0.9rem;
-  color: #3f569d;
+  color: #ffffff;
 }
 
 /*stupid overly complicated buttons...*/
