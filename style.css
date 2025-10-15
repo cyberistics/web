@@ -24,7 +24,12 @@ body {
 }
 
 header.header {
-  background: linear-gradient(180deg, #aabbcc, #becbd8, #aabbcc);
+    background: linear-gradient(
+    180deg,
+    #aabbcc 20%,
+    #678bb1 30%,
+    #aabbcc 80%
+  );
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #b3c7f0;
