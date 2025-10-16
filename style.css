@@ -182,6 +182,22 @@ footer {
   padding: 20px;
 }
 
+.bigimg {
+  border: 2px #cfd3e7 solid;
+  background: transparent;
+  padding: 0;
+    width: 415px;
+  margin: 0;
+}
+
+.bigimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
 /*stupid overly complicated buttons...*/
 .button-animated-menu ul {
   list-style-type: none;
