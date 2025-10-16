@@ -176,10 +176,10 @@ footer {
 
 .leftimg {
   float: right;
-  width: 200px;
   border-radius: 6px;
   border: 2px solid #b0cbff;
   margin: 0 0 15px 15px;
+  padding: 20px;
 }
 
 /*stupid overly complicated buttons...*/
