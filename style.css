@@ -140,7 +140,7 @@ section h2, section h3 {
 
 /* The right image takes up its own column */
 .rightimg img {
-  width: 100%;
+  width: 80%;
   border-radius: 6px;
   border: 2px solid #b0cbff;
 }
