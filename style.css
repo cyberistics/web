@@ -179,13 +179,13 @@ footer {
 }
 
 /* Style the two image boxes and updates section as flex items */
-.leftimg, .updates, .bigimg {
+.rightimg, .updates, .bigimg {
   border-radius: 6px;
   border: 2px solid #b0cbff;
   padding: 10px;
 }
 
-.leftimg {
+.rightimg {
   flex: 0 0 auto; /* Prevent from shrinking, let it grow based on content */
   max-width: 300px; 
 }
@@ -200,7 +200,7 @@ footer {
 }
 
 /* Ensure the images inside the containers fill the available space */
-.leftimg img, .bigimg img {
+.rightimg img, .bigimg img {
   width: 100%;
   height: auto;
   object-fit: contain; 
