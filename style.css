@@ -207,6 +207,11 @@ footer {
   display: block;
 }
 
+.info {
+  flex: 1;
+  padding: 20px;
+}
+
 /*stupid overly complicated buttons...*/
 .button-animated-menu ul {
   list-style-type: none;
