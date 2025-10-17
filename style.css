@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
-  cursor:url("https://www.rw-designer.com/cursor-set/angel-heart-angel-heart-blue");
+  cursor:url("https://www.rw-designer.com/cursor-set/angel-heart-angel-heart-blue"), auto; /* added 'auto' fallback */
 }
 
 .page-wrapper {
@@ -129,12 +129,7 @@ section h2, section h3 {
   margin-left: 20px;
 }
 
-.float-left {
-  float: left;
-  margin: 0 10px 10px 0;
-  border-radius: 6px;
-  border: 1px solid #b7d2ff;
-}
+/* Removed the conflicting .float-left rule */
 
 .portfolio-grid {
   display: flex;
@@ -174,40 +169,43 @@ footer {
   color: #ffffff;
 }
 
-/* Create a flex container for your images and updates section */
-.flex-row-container {
+/* Corrected flexbox container for images and updates section */
+.content-with-images {
   display: flex;
-  gap: 15px; /* Add a gap between elements */
-  align-items: flex-start; /* Align items to the top */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  gap: 15px; 
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 15px; /* Added a margin to match other sections */
 }
 
-/* Style the two image boxes */
-.leftimg, .bigimg {
+/* Style the two image boxes and updates section as flex items */
+.leftimg, .updates, .bigimg {
   border-radius: 6px;
   border: 2px solid #b0cbff;
-  margin-bottom: 15px;
-  padding: 10px; /* A smaller padding is often better for images */
+  padding: 10px;
 }
 
 .leftimg {
-  flex-shrink: 0; /* Prevents the image box from shrinking */
-  max-width: 300px; /* A specific maximum width */
+  flex: 0 0 auto; /* Prevent from shrinking, let it grow based on content */
+  max-width: 300px; 
+}
+
+.updates {
+  flex: 1; /* Allow the updates section to fill remaining space */
 }
 
 .bigimg {
-  flex-grow: 1; /* Allows the image box to fill remaining space */
+  flex: 1 1 300px; /* Allow the big image to grow and shrink, with a minimum width */
+  min-width: 300px;
 }
 
 /* Ensure the images inside the containers fill the available space */
 .leftimg img, .bigimg img {
   width: 100%;
   height: auto;
-  object-fit: contain; /* Prevents stretching and ensures the entire image is visible */
+  object-fit: contain; 
   display: block;
 }
-
-
 
 /*stupid overly complicated buttons...*/
 .button-animated-menu ul {
