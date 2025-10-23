@@ -24,7 +24,7 @@ body {
 }
 
 header.header {
-  background: linear-gradient(180deg, #aabbcc 88%, #678bb1 91%, #aabbcc 100%);
+  background: linear-gradient(180deg, #dbe2e9 88%, #b4c3d2 91%, #dbe2e9 100%);
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #b3c7f0;
@@ -193,7 +193,7 @@ section h2, section h3 {
 
 footer {
   text-align: center;
-  background: linear-gradient(180deg, #aabbcc 0%, #678bb1 50%, #aabbcc 100%);
+  background: linear-gradient(180deg, #dbe2e9 0%, #b4c3d2 50%, #dbe2e9 100%);
   border-top: 1px solid #b3c7f0;
   padding: 10px;
   font-size: 0.9rem;
@@ -211,8 +211,8 @@ footer {
 }
 
 .button-animated-menu a {
-  --button-color1: #aabbcc;
-  --button-color2: #678bb1;
+  --button-color1: #dbe2e9;
+  --button-color2: #b4c3d2;
   --button-shine: #ffffff;
   position: relative;
   overflow: hidden;
