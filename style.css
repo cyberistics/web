@@ -294,4 +294,30 @@ footer {
   color: #2e4f9a;
   margin-bottom: 8px;
 }
+/* Updated layout for the main content area */
+.grid-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Left column and right column */
+  gap: 15px;
+}
+
+/* New container for the right column, holding the image and new section */
+.right-column-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Style for the new "More Info" section */
+.more-info {
+  background: #f9fbff;
+  border: 1px solid #c7daf8;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.more-info h3 {
+  color: #2e4f9a;
+  margin-bottom: 8px;
+}
 
