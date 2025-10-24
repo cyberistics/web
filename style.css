@@ -52,7 +52,7 @@ body {
 /* Sidebar */
 .sidebar {
     width: 250px;
-    background: #f0f6ff;
+    background: #dbe2e9;
     border-right: 1px solid #c5d6f2;
     padding: 15px;
     flex-shrink: 0;
@@ -60,7 +60,7 @@ body {
 
 .profile, .hits {
     text-align: center;
-    background: #dbe2e9;
+    background: #e5eaef;
     border: 1px solid #c8dbff;
     border-radius: 8px;
     padding: 10px;
