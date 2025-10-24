@@ -18,7 +18,7 @@ body {
     border: 2px solid #b9cae8;
     border-radius: 8px;
     box-shadow: 0 3px 8px rgba(80,100,150,0.2);
-    max-width: 1200px;
+    max-width: 960px; /* ← Changed back to 960px */
     margin: 0 auto;
     overflow: hidden;
 }
