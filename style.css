@@ -6,6 +6,8 @@
 
 html, body {
   height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
@@ -25,8 +27,7 @@ body {
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(80,100,150,0.2);
   width: 100%;
-  max-width: 960px; /* Changed from fixed width to max-width */
-  overflow: hidden;
+  max-width: 1200px; /* Increased max-width but will adapt to screen */
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -37,12 +38,14 @@ header.header {
   text-align: center;
   padding: 10px 0;
   border-bottom: 1px solid #b3c7f0;
+  width: 100%;
 }
 
 header img {
   width: 100%;
   max-width: 100%;
   border-bottom: 2px solid #b3c7f0;
+  display: block;
 }
 
 header h1 {
@@ -54,17 +57,16 @@ header h1 {
 
 .main-container {
   display: flex;
-  flex: 1;
-  min-height: 0;
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%;
+  min-height: 500px; /* Ensure minimum height */
 }
 
 .sidebar {
-  width: 25%;
-  min-width: 200px; /* Minimum width for sidebar */
+  width: 250px; /* Fixed width instead of percentage */
   background: #f0f6ff;
   border-right: 1px solid #c5d6f2;
   padding: 15px;
+  flex-shrink: 0; /* Prevent sidebar from shrinking */
 }
 
 .sidebar h2 {
@@ -101,6 +103,7 @@ header h1 {
   border: 1px solid #c8dbff;
   border-radius: 8px;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 .hits {
@@ -124,10 +127,8 @@ header h1 {
 main {
   flex: 1;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  min-width: 0; /* Important for flexbox overflow */
+  min-width: 0; /* Important for flexbox */
+  overflow: visible; /* Allow content to flow naturally */
 }
 
 section {
@@ -151,34 +152,29 @@ section h2, section h3 {
   margin-left: 20px;
 }
 
-/* Updated layout for the main content area */
+/* Grid layout */
 .grid-content {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 15px;
-  flex: 1;
-  min-height: 0;
-  min-width: 0; /* Prevent grid overflow */
+  width: 100%;
 }
 
-/* The left column contains the updates, big image, and todo sections */
+/* Left column */
 .left-column {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  min-width: 0; /* Prevent flex item overflow */
 }
 
-/* The right column container */
+/* Right column */
 .right-column-container {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  height: 100%;
-  min-width: 0; /* Prevent flex item overflow */
 }
 
-/* Make right image bigger and fit properly */
+/* Make images responsive */
 .rightimg {
   width: 100%;
   border-radius: 6px;
@@ -186,7 +182,6 @@ section h2, section h3 {
   padding: 10px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
 }
 
 .rightimg img {
@@ -212,29 +207,24 @@ section h2, section h3 {
   display: block;
 }
 
-.portfolio-grid {
-  display: flex;
+/* Updates grid */
+.updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 15px;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-.portfolio-grid .item {
-  text-align: center;
+/* Style sections */
+.new-info, .more-info {
+  background: #f9fbff;
+  border: 1px solid #c7daf8;
+  border-radius: 8px;
+  padding: 15px;
 }
 
-.portfolio-grid img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 6px;
-  border: 2px solid #bcd3ff;
-  transition: transform 0.2s;
-}
-
-.portfolio-grid img:hover {
-  transform: scale(1.05);
-  border-color: #88aaff;
+.new-info h3, .more-info h3 {
+  color: #2e4f9a;
+  margin-bottom: 8px;
 }
 
 footer {
@@ -244,10 +234,11 @@ footer {
   padding: 10px;
   font-size: 0.9rem;
   color: #ffffff;
+  width: 100%;
   margin-top: auto;
 }
 
-/*stupid overly complicated buttons...*/
+/* Button styles */
 .button-animated-menu ul {
   list-style-type: none;
   padding: 0;
@@ -263,9 +254,9 @@ footer {
   --button-shine: #ffffff;
   position: relative;
   overflow: hidden;
-  padding: 12px 20px; /* Reduced padding for smaller screens */
+  padding: 12px 20px;
   font-family: Quando, sans-serif;
-  font-size: 14px; /* Slightly smaller font */
+  font-size: 14px;
   font-style: italic;
   color: #fff;
   cursor: pointer;
@@ -279,10 +270,10 @@ footer {
   );
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), inset 0 1px 1px rgba(255, 255, 255, 0.5);
   transition: box-shadow 0.3s ease;
-  display: inline-block;
+  display: block;
   text-decoration: none;
-  width: 100%; /* Make buttons full width */
   text-align: center;
+  width: 100%;
 }
 
 .button-animated-menu a span {
@@ -319,46 +310,18 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* This was an old rule that was conflicting with your desired layout */
+/* Remove old conflicting rule */
 .content-with-images {
   display: none;
 }
 
-/* Nested grid for recent updates and the new section */
-.updates-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
+/* Responsive design for smaller screens */
+@media (max-width: 1024px) {
+  .page-wrapper {
+    max-width: 95%;
+  }
 }
 
-/* Style the new section to match the others */
-.new-info {
-  background: #f9fbff;
-  border: 1px solid #c7daf8;
-  border-radius: 8px;
-  padding: 15px;
-}
-
-.new-info h3 {
-  color: #2e4f9a;
-  margin-bottom: 8px;
-}
-
-/* Style for the new "More Info" section */
-.more-info {
-  background: #f9fbff;
-  border: 1px solid #c7daf8;
-  border-radius: 8px;
-  padding: 15px;
-  flex: 1;
-}
-
-.more-info h3 {
-  color: #2e4f9a;
-  margin-bottom: 8px;
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
   body {
     padding: 10px;
@@ -376,21 +339,10 @@ footer {
   
   .grid-content {
     grid-template-columns: 1fr;
-    gap: 10px;
   }
   
   .updates-grid {
     grid-template-columns: 1fr;
-    gap: 10px;
-  }
-  
-  .button-animated-menu a {
-    padding: 10px 15px;
-    font-size: 13px;
-  }
-  
-  main {
-    padding: 15px;
   }
 }
 
@@ -399,20 +351,11 @@ footer {
     padding: 5px;
   }
   
-  header h1 {
-    font-size: 1.1rem;
-  }
-  
-  .sidebar, main {
+  main {
     padding: 10px;
   }
   
-  section {
+  .sidebar {
     padding: 10px;
-  }
-  
-  .profile img {
-    width: 60px;
-    height: 60px;
   }
 }
