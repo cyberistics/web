@@ -274,3 +274,24 @@ footer {
 .content-with-images {
   display: none;
 }
+
+/* Nested grid for recent updates and the new section */
+.updates-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 15px; /* Spacing between the columns */
+}
+
+/* Style the new section to match the others */
+.new-info {
+  background: #f9fbff;
+  border: 1px solid #c7daf8;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.new-info h3 {
+  color: #2e4f9a;
+  margin-bottom: 8px;
+}
+
