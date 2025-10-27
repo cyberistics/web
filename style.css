@@ -222,20 +222,32 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+/* Webring styles */
 .webrings {
-	width: 50%;
-	margin: 0 auto;
-	text-align: center
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: #eef1f4;
+    border: 1px solid #b4c3d2;
+    border-radius: 8px;
+    padding: 15px;
 }
 
 #hotline {
-	border: 1px solid #000;
-	background-color: #fa9aba;
-	color: #520052
+    border: 1px solid #000;
+    background-color: #fa9aba;
+    color: #520052;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 #hotline a {
-	font-style: italic;
-	text-transform: uppercase;
-	color: #520052 !important
+    font-style: italic;
+    text-transform: uppercase;
+    color: #520052 !important;
+    text-decoration: none;
+}
+
+#hotline a:hover {
+    text-decoration: underline;
 }
