@@ -274,24 +274,24 @@ footer {
     font-size: 1.2rem;
 }
 
-/* Buttons Gallery */
 .buttons-gallery {
     display: grid;
-    gap: 15px;
-    margin-top: 15px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    flex: 1;
+    align-content: start;
 }
 
-.button-item {
-    text-align: center;
-    background: #f9fbff;
-    padding: 15px;
+.buttons-gallery img {
+    width: 88px;
+    height: 31px;
+    border: 1px solid #b4c3d2;
+    transition: transform 0.2s;
+    justify-self: center;
 }
 
-.button-item img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    margin-bottom: 8px;
+.buttons-gallery img:hover {
+    transform: scale(1.1);
 }
 
 
