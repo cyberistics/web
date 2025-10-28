@@ -286,16 +286,9 @@ footer {
     width: 88px;
     height: 31px;
     border: 1px solid #b4c3d2;
-    transition: transform 0.2s;
     justify-self: center;
 }
 
-.buttons-gallery img:hover {
-    transform: scale(1.1);
-}
-
-
-/* Stamps Gallery */
 .stamps-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
