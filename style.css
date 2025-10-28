@@ -384,16 +384,10 @@ footer {
 #hotline a:hover {
     text-decoration: underline;
 }
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .graphics-layout {
-        grid-template-columns: 1fr;
-    }
     
     .buttons-gallery,
     .stamps-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fit);
     }
     
     .info-sidebar {
