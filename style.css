@@ -277,7 +277,6 @@ footer {
 /* Buttons Gallery */
 .buttons-gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     margin-top: 15px;
 }
@@ -285,34 +284,16 @@ footer {
 .button-item {
     text-align: center;
     background: #f9fbff;
-    border: 1px solid #c7daf8;
-    border-radius: 8px;
     padding: 15px;
-    transition: transform 0.2s;
-}
-
-.button-item:hover {
-    transform: translateY(-2px);
 }
 
 .button-item img {
     width: 100%;
     max-width: 120px;
     height: auto;
-    border-radius: 6px;
-    border: 2px solid #b4c3d2;
     margin-bottom: 8px;
 }
 
-.button-item code {
-    background: #dbe2e9;
-    padding: 4px 8px;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    display: block;
-    margin-top: 8px;
-    word-break: break-all;
-}
 
 /* Stamps Gallery */
 .stamps-gallery {
@@ -325,23 +306,13 @@ footer {
 .stamp-item {
     text-align: center;
     background: #f9fbff;
-    border: 1px solid #c7daf8;
-    border-radius: 8px;
     padding: 15px;
-    transition: transform 0.2s;
-}
-
-.stamp-item:hover {
-    transform: rotate(-2deg);
 }
 
 .stamp-item img {
     width: 100%;
     max-width: 80px;
     height: auto;
-    border-radius: 50%;
-    border: 2px solid #b4c3d2;
-    margin-bottom: 8px;
 }
 
 /* Info Sidebar */
@@ -383,14 +354,4 @@ footer {
 
 #hotline a:hover {
     text-decoration: underline;
-}
-    
-    .buttons-gallery,
-    .stamps-gallery {
-        grid-template-columns: repeat(auto-fit);
-    }
-    
-    .info-sidebar {
-        order: -1;
-    }
 }
