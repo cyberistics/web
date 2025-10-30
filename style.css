@@ -352,8 +352,7 @@ footer {
 }
 
 .about-box img {
-    width: 150px;
-    height: 150px;
-    border-radius: 6px;
-    margin-bottom: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
 }
