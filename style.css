@@ -350,3 +350,10 @@ footer {
 #hotline a:hover {
     text-decoration: underline;
 }
+
+.about-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+    margin-bottom: 5px;
+}
